@@ -31,6 +31,7 @@ const AddTask = observer(() => {
   const [description, setDescription] = useState<string>("");
   const [status, setStatus] = useState<string>();
   const [error, setError] = useState<string>();
+  const [priority, setPriority] = useState<string>();
 
   const handleNewTask = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -46,6 +47,8 @@ const AddTask = observer(() => {
         id: Date.now().toString(),
         title,
         description,
+        Date: new Date(),
+        priority: priority || "low",
         status,
       };
 
@@ -127,6 +130,27 @@ const AddTask = observer(() => {
                   <SelectItem value="pending">Pending</SelectItem>
                   <SelectItem value="in_progress">In Progress</SelectItem>
                   <SelectItem value="completed">Completed</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="grid grid-cols-4 items-center gap-2">
+              <Label
+                htmlFor="status"
+                className="text-left"
+              >
+                Priority
+              </Label>
+              <Select
+                value={priority}
+                onValueChange={setPriority}
+              >
+                <SelectTrigger className="col-span-3">
+                  <SelectValue placeholder="Task Priority" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="pending">Low</SelectItem>
+                  <SelectItem value="in_progress">Medium</SelectItem>
+                  <SelectItem value="completed">High</SelectItem>
                 </SelectContent>
               </Select>
             </div>

@@ -4,6 +4,8 @@ export const TaskModel = types.model("Task", {
   id: types.identifier,
   title: types.string,
   description: types.string,
+  Date: types.Date,
+  priority: types.string,
   status: types.string,
 });
 
