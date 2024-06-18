@@ -131,5 +131,3 @@ For any questions or suggestions, feel free to contact me:
 - **Email**: [yashmpanjwani@gmail.com](mailto:yashmpanjwani@gmail.com)
 - **GitHub**: [younglord088](https://github.com/younglord088)
 
-## Acknowledgements
-Special thanks to the Code for GovTech community for their support and guidance throughout this project.
