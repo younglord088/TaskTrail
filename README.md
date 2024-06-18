@@ -103,10 +103,33 @@ Explanation:
 
 The application persists task data using local storage. Tasks are stored under the key "taskStore" as a JSON string.
 
+## How to Contribute
+We welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. Open a pull request.
+
 ## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the [MIT License](LICENSE).
+## Contact
+For any questions or suggestions, feel free to contact me:
 
----
+- **Name**: Yash Panjwani
+- **Email**: [yashmpanjwani@gmail.com](mailto:yashmpanjwani@gmail.com)
+- **GitHub**: [younglord088](https://github.com/younglord088)
 
-Please let me know if you need any further information or assistance.
+## Acknowledgements
+Special thanks to the Code for GovTech community for their support and guidance throughout this project.
